@@ -99,7 +99,7 @@ function printResult(homeList, filter) {
 
   if (filter) {
     result = result.filter(
-      r => r.name.indexOf(filter) > 0 || r.name.indexOf("====") > 0
+      r => r.name.indexOf(filter) >= 0 || r.name.indexOf("====") >= 0
     );
   }
 
